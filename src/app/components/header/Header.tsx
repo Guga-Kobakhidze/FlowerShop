@@ -11,11 +11,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 1200) {
-        setShowBurger(true);
-      } else {
-        setShowBurger(false);
-      }
+      window.innerWidth < 1200 ? setShowBurger(true) : setShowBurger(false);
     };
 
     handleResize();

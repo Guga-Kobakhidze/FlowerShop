@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
-import Background from "./components/background/Background";
+import MainPage from "./mainpage/MainPage";
 
 export default function Home() {
-  return <Box></Box>;
+  return <MainPage />;
 }

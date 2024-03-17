@@ -5,18 +5,19 @@ const Background = () => {
   return (
     <Box
       height={{ md: "275vh", xs: "100vh" }}
+      width={"100%"}
+      position={"absolute"}
+      top={0}
+      left={0}
+      right={0}
+      bottom={0}
       sx={{
-        position: "relative",
-        width: "100%",
+        backgroundImage: `url(/assets/background.svg)`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
-    >
-      <Image
-        src={"/assets/background.svg"}
-        alt="Vercel Logo"
-        layout="fill"
-        objectFit="cover"
-      />
-    </Box>
+    ></Box>
   );
 };
 

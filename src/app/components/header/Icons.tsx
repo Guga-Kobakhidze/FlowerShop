@@ -1,11 +1,7 @@
 import { Button, ButtonGroup } from "@mui/material";
 import React from "react";
 
-interface IconsProps {
-  isVisible: boolean;
-}
-
-const Icons: React.FC<IconsProps> = ({ isVisible }) => {
+const Icons: React.FC<{ isVisible: boolean }> = ({ isVisible }) => {
   return (
     <ButtonGroup
       sx={{
