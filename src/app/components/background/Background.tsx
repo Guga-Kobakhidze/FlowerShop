@@ -12,7 +12,8 @@ const Background = () => {
       right={0}
       bottom={0}
       sx={{
-        backgroundImage: `url(/assets/background.svg)`,
+        filter: "brightness(0.7)",
+        backgroundImage: `url("/assets/background.svg")`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",

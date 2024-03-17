@@ -20,3 +20,22 @@ export interface UserDataProps {
 export interface UserinfoProps {
   userInfo: UserDataProps[];
 }
+
+export interface TrandingCardProps {
+  id: number;
+  title: string;
+  desc: string;
+  rs: string;
+  image: string;
+}
+
+export interface TrandyCardProps {
+  trandyCard: TrandingCardProps[];
+}
+
+// ButtonProps
+
+export interface ClickBtnProps {
+  content?: string;
+  image?: string;
+}
