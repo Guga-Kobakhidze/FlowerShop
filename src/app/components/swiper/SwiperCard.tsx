@@ -9,10 +9,11 @@ import "./swiper.css";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import { Box, Button, Typography } from "@mui/material";
 import { SwiperProps } from "@/app/interfaces/interfaces";
+import ClickButton from "../buttons/Button";
 
 const SwiperCard: React.FC<SwiperProps> = ({ swiperCard }) => {
   return (
-    <Box className="container" ml={115}>
+    <Box mt={"-100px"}>
       <Swiper
         cssMode={true}
         navigation={true}
@@ -23,7 +24,7 @@ const SwiperCard: React.FC<SwiperProps> = ({ swiperCard }) => {
         className="mySwiper"
       >
         {swiperCard.map((card) => (
-          <SwiperSlide>
+          <SwiperSlide key={card.id}>
             <Box
               position={"relative"}
               display={"flex"}
@@ -54,16 +55,7 @@ const SwiperCard: React.FC<SwiperProps> = ({ swiperCard }) => {
                 <Typography variant="h4" mb={"20px"}>
                   {card.subtitle}
                 </Typography>
-                <Button
-                  variant="outlined"
-                  sx={{
-                    borderColor: "white",
-                    color: "white",
-                    "&:hover": { borderColor: "gray", color: "gray" },
-                  }}
-                >
-                  <Typography variant="h6">Buy Now</Typography>
-                </Button>
+                <ClickButton content="buy now" />
               </Box>
             </Box>
           </SwiperSlide>

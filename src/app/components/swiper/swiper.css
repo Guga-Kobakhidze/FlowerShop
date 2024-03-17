@@ -1,5 +1,4 @@
 .swiper {
-  margin: 120px auto;
   width: 512px;
   height: 800px;
   border-radius: 77px;
@@ -18,7 +17,7 @@
   background-color: transparent;
 }
 
-img {
+.swiper-slide img {
   width: 100%;
   height: 100%;
 }
