@@ -3,6 +3,7 @@ import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import ClickButton from "../buttons/Button";
+import { BoxCard, BoxStyle, BoxedCard } from "./TrandyCardStyle";
 
 const TrandyCard: React.FC<TrandyCardProps> = ({ trandyCard }) => {
   return (
@@ -10,21 +11,9 @@ const TrandyCard: React.FC<TrandyCardProps> = ({ trandyCard }) => {
       <Typography variant="h3" color={"white"} mb={15}>
         Our Trendy plants
       </Typography>
-      <Box display={"flex"} flexDirection={"column"} gap={15}>
+      <BoxStyle>
         {trandyCard.map((card, index) => (
-          <Box
-            key={index}
-            height={400}
-            position={"relative"}
-            display={"flex"}
-            alignItems={"center"}
-            gap={10}
-            color={"white"}
-            sx={{
-              "&:nth-child(2n) img": { order: 1 },
-              "&:nth-child(2n) .myBox": { ml: "122px" },
-            }}
-          >
+          <BoxCard key={index}>
             <img
               width={"100%"}
               src="/assets/TrandyBg.svg"
@@ -42,7 +31,7 @@ const TrandyCard: React.FC<TrandyCardProps> = ({ trandyCard }) => {
               alt={card.title}
               style={{ transform: "translateY(-30px)" }}
             />
-            <Box className="myBox" textAlign={"start"} width={600} zIndex={2}>
+            <BoxedCard className="myBox">
               <Typography variant="h4" mb={1.5}>
                 {card.title}
               </Typography>
@@ -52,14 +41,14 @@ const TrandyCard: React.FC<TrandyCardProps> = ({ trandyCard }) => {
               <Typography variant="h4" mb={2}>
                 {card.rs}
               </Typography>
-              <Box sx={{ display: "flex", justifyContent: "start", gap: 3 }}>
+              <Box>
                 <ClickButton content="Expore" />
                 <ClickButton image="/assets/bagicon.svg" />
               </Box>
-            </Box>
-          </Box>
+            </BoxedCard>
+          </BoxCard>
         ))}
-      </Box>
+      </BoxStyle>
     </Box>
   );
 };

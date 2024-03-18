@@ -3,29 +3,21 @@ import React from "react";
 import ClickButton from "../buttons/Button";
 import UserCard from "./UserCard";
 import { UserData } from "../../../data/SwiperCardData";
+import { ButtonStyle, HeroCard } from "./HeroBoxStyle";
 
 const HeroBox = () => {
   return (
-    <Box maxWidth={650}>
-      <Typography variant="h1" color={"white"} mb={1}>
+    <Box maxWidth={650} color={"white"}>
+      <Typography variant="h1" mb={1}>
         Breath Natureal
       </Typography>
-      <Typography variant="subtitle1" color={"white"} mb={2}>
+      <Typography variant="subtitle1" mb={2}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </Typography>
-      <Box mb={28} sx={{ display: "flex", alignItems: "center", gap: 3 }}>
+      <HeroCard mb={28}>
         <ClickButton content="Explore" />
-        <Button
-          sx={{
-            border: "none",
-            height: 58,
-            gap: 0,
-            img: {
-              width: 40,
-            },
-          }}
-        >
+        <ButtonStyle>
           <img src="/assets/livedemo.svg" alt="liveDemo" />
           <Typography
             variant="subtitle1"
@@ -35,8 +27,8 @@ const HeroBox = () => {
           >
             Live Demo...
           </Typography>
-        </Button>
-      </Box>
+        </ButtonStyle>
+      </HeroCard>
       <UserCard userInfo={UserData} />
     </Box>
   );

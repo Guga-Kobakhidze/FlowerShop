@@ -1,31 +1,15 @@
 import { Button, ButtonGroup } from "@mui/material";
 import React from "react";
+import { HeaderIcons } from "./HeaderStyle";
+import ClickButton from "../buttons/Button";
 
 const Icons: React.FC<{ isVisible: boolean }> = ({ isVisible }) => {
   return (
-    <ButtonGroup
-      sx={{
-        button: {
-          border: "none",
-          "&:hover": {
-            border: "none",
-            bgcolor: "transparent",
-          },
-        },
-      }}
-    >
-      <Button>
-        <img src="/assets/searchicon.svg" alt="search" />
-      </Button>
-      <Button>
-        <img src="/assets/bagicon.svg" alt="bagicon" />
-      </Button>
-      {isVisible && (
-        <Button>
-          <img src="/assets/burgermenu.svg" alt="burgermenu" />
-        </Button>
-      )}
-    </ButtonGroup>
+    <HeaderIcons>
+      <ClickButton image="/assets/searchicon.svg" />
+      <ClickButton image="/assets/bagicon.svg" />
+      {isVisible && <ClickButton image="/assets/burgermenu.svg" />}
+    </HeaderIcons>
   );
 };
 
