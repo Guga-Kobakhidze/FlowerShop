@@ -7,7 +7,7 @@ import { SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import { Box, Typography } from "@mui/material";
 import { SwiperProps } from "@/app/interfaces/interfaces";
-import { MySwiper, SwiperCardBox, SwuperCardContent } from "./SwiperCardStyle";
+import { MySwiper, SwiperCardBox, SwiperCardContent } from "./SwiperCardStyle";
 
 const SwiperCard: React.FC<SwiperProps> = ({ swiperCard }) => {
   return (
@@ -27,7 +27,7 @@ const SwiperCard: React.FC<SwiperProps> = ({ swiperCard }) => {
               <Box position={"absolute"} top={-95}>
                 <img src={card.image} alt="flower" />
               </Box>
-              <SwuperCardContent>
+              <SwiperCardContent>
                 <Typography variant="h6" mb={"20px"}>
                   {card.title}
                 </Typography>
@@ -35,7 +35,7 @@ const SwiperCard: React.FC<SwiperProps> = ({ swiperCard }) => {
                   {card.subtitle}
                 </Typography>
                 <ClickButton content="buy now" />
-              </SwuperCardContent>
+              </SwiperCardContent>
             </SwiperCardBox>
           </SwiperSlide>
         ))}

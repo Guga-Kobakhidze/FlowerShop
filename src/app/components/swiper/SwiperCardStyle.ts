@@ -70,7 +70,7 @@ export const SwiperCardBox = styled(Box)({
   height: 644,
 });
 
-export const SwuperCardContent = styled(Box)({
+export const SwiperCardContent = styled(Box)({
   position: "absolute",
   textAlign: "start",
   left: 72,
