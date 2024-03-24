@@ -3,9 +3,9 @@ import HeroBox from "../components/herobox/HeroBox";
 import TrandyCardList from "../components/trandycard/TrandyCardList";
 import GridCardsList from "../components/topselling/TopSellingList";
 import SwiperCardList from "../components/swiper/SwiperCardList";
+import UserReviewList from "../components/userreview/UserReviewList";
 import { BoxContent, GridBox, GridTop, GridTrand } from "./MainPageStyle";
 import { Grid } from "@mui/material";
-import UserReviewList from "../components/userreview/UserReviewList";
 
 const MainPage = () => {
   return (
