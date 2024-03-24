@@ -1,3 +1,5 @@
+"use client";
+
 import { Box, ButtonGroup, styled } from "@mui/material";
 
 export const HeaderBox = styled(Box)({

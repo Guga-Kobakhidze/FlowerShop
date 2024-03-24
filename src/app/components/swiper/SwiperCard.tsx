@@ -11,7 +11,7 @@ import { MySwiper, SwiperCardBox, SwiperCardContent } from "./SwiperCardStyle";
 
 const SwiperCard: React.FC<SwiperProps> = ({ swiperCard }) => {
   return (
-    <Box mt={"-100px"}>
+    <Box>
       <MySwiper
         cssMode={true}
         navigation={true}

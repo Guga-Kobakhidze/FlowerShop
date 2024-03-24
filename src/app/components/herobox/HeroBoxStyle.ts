@@ -1,3 +1,5 @@
+"use client";
+
 import { Box, Button, styled } from "@mui/material";
 
 export const HeroBox = styled(Box)({

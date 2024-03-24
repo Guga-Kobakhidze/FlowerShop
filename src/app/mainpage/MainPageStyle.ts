@@ -1,3 +1,5 @@
+"use client";
+
 import { Box, Grid, styled } from "@mui/material";
 
 export const BoxContent = styled(Box)({
@@ -12,7 +14,13 @@ export const GridBox = styled(Grid)({
   marginBottom: 80,
 });
 
-export const GridBoxTrand = styled(Grid)({
+export const GridTrand = styled(Grid)({
   flexDirection: "column",
   alignItems: "center",
+  marginBottom: 240,
+});
+
+export const GridTop = styled(Grid)({
+  width: "100%",
+  marginBottom: 80,
 });

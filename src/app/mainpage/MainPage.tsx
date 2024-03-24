@@ -1,23 +1,28 @@
-"use client";
-
 import React from "react";
-import SwiperCard from "../components/swiper/SwiperCard";
-import { swiperCard } from "@/data/SwiperCardData";
 import HeroBox from "../components/herobox/HeroBox";
-import TrandyCard from "../components/trandycard/TrandyCard";
-import { trandingCard } from "@/data/FlowerCardData";
-import { BoxContent, GridBox, GridBoxTrand } from "./MainPageStyle";
+import TrandyCardList from "../components/trandycard/TrandyCardList";
+import GridCardsList from "../components/topselling/TopSellingList";
+import SwiperCardList from "../components/swiper/SwiperCardList";
+import { BoxContent, GridBox, GridTop, GridTrand } from "./MainPageStyle";
+import { Grid } from "@mui/material";
+import UserReviewList from "../components/userreview/UserReviewList";
 
 const MainPage = () => {
   return (
     <BoxContent>
       <GridBox container>
         <HeroBox />
-        <SwiperCard swiperCard={swiperCard} />
+        <SwiperCardList />
       </GridBox>
-      <GridBoxTrand container>
-        <TrandyCard trandyCard={trandingCard} />
-      </GridBoxTrand>
+      <GridTrand container>
+        <TrandyCardList />
+      </GridTrand>
+      <GridTop container>
+        <GridCardsList />
+      </GridTop>
+      <Grid container>
+        <UserReviewList />
+      </Grid>
     </BoxContent>
   );
 };
