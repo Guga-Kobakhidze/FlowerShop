@@ -33,10 +33,6 @@ export interface TrandyCardProps {
   trandyCard: TrandingCardProps[];
 }
 
-export interface GridCardProps {
-  cardData: TrandingCardProps[];
-}
-
 // ButtonProps
 
 export interface ClickBtnProps {
