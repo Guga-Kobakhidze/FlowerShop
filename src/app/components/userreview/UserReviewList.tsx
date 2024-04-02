@@ -1,12 +1,12 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import React from "react";
 import Title from "../title/Title";
-import { UserData } from "@/data/SwiperCardData";
 import UserReview from "./UserReview";
+import { UserData } from "@/data/SwiperCardData";
 
 const UserReviewList = () => {
   return (
-    <Box width={"100%"}>
+    <Box width={"100%"} mb={14}>
       <Title content="Customer Review" />
       <UserReview userInfo={UserData} />
     </Box>

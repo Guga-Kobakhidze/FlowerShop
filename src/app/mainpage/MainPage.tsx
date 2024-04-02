@@ -6,6 +6,7 @@ import SwiperCardList from "../components/swiper/SwiperCardList";
 import UserReviewList from "../components/userreview/UserReviewList";
 import { BoxContent, GridBox, GridTop, GridTrand } from "./MainPageStyle";
 import { Grid } from "@mui/material";
+import BestSwiperList from "../components/bestswiper/BestSwiperList";
 
 const MainPage = () => {
   return (
@@ -22,6 +23,9 @@ const MainPage = () => {
       </GridTop>
       <Grid container>
         <UserReviewList />
+      </Grid>
+      <Grid container>
+        <BestSwiperList />
       </Grid>
     </BoxContent>
   );
