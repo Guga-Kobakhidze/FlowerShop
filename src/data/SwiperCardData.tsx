@@ -1,4 +1,8 @@
-import { SwiperCardProps, UserDataProps } from "@/app/interfaces/interfaces";
+import {
+  SwiperBestCardProps,
+  SwiperCardProps,
+  UserDataProps,
+} from "@/app/interfaces/interfaces";
 
 export const swiperCard: SwiperCardProps[] = [
   {
@@ -18,6 +22,25 @@ export const swiperCard: SwiperCardProps[] = [
     image: "/assets/cardflower3.svg",
     title: "Trendy House Plant",
     subtitle: "Calathea plant",
+  },
+];
+
+export const swiperBestCard: SwiperBestCardProps[] = [
+  {
+    id: 1,
+    image: "/assets/flow1.svg",
+    title: "We Have Small And Best O2 Plants Collection’s",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    text2:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+  },
+  {
+    id: 2,
+    image: "/assets/flow2.svg",
+    title: "We Have Small And Best O2 Plants Collection’s",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    text2:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
   },
 ];
 

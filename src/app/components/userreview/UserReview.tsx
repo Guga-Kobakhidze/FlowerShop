@@ -22,8 +22,8 @@ const UserReview: React.FC<UserinfoProps> = ({ userInfo }) => {
         className="mySwiper myOwnSwiper"
       >
         {userInfo.map((user) => (
-          <SwiperSlide>
-            <Box key={user.id} sx={{ ...UserBG }}>
+          <SwiperSlide key={user.id}>
+            <Box sx={{ ...UserBG }}>
               <img className="UserBg" src="/assets/UserBg2.svg" alt="userBg" />
               <Box sx={{ ...UserCard }}>
                 <Box className="userInbox" mb={8}>

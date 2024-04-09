@@ -5,8 +5,20 @@ export interface SwiperCardProps {
   subtitle: string;
 }
 
+export interface SwiperBestCardProps {
+  id: number;
+  image: string;
+  title: string;
+  text: string;
+  text2: string;
+}
+
 export interface SwiperProps {
   swiperCard: SwiperCardProps[];
+}
+
+export interface SwiperBestProps {
+  swiperCard: SwiperBestCardProps[];
 }
 
 export interface UserDataProps {
